@@ -1,0 +1,3 @@
+vhdl work "Componente.vhd"
+vhdl work "Paralelismo_TOP.vhd"
+vhdl work "TOP_TB.vhd"

@@ -1,0 +1,11 @@
+xst -intstyle ise -ifn "C:/Users/Haroldo/Documents/USAC/E6/Modulos mios/FSM/Paralelismo/Paralelismo_TOP.xst" -ofn "C:/Users/Haroldo/Documents/USAC/E6/Modulos mios/FSM/Paralelismo/Paralelismo_TOP.syr" 
+xst -intstyle ise -ifn "C:/Users/Haroldo/Documents/USAC/E6/Modulos mios/FSM/Paralelismo/Paralelismo_TOP.xst" -ofn "C:/Users/Haroldo/Documents/USAC/E6/Modulos mios/FSM/Paralelismo/Paralelismo_TOP.syr" 
+xst -intstyle ise -ifn "C:/Users/Haroldo/Documents/USAC/E6/Modulos mios/FSM/Paralelismo/Paralelismo_TOP.xst" -ofn "C:/Users/Haroldo/Documents/USAC/E6/Modulos mios/FSM/Paralelismo/Paralelismo_TOP.syr" 
+xst -intstyle ise -ifn "C:/Users/Haroldo/Documents/USAC/E6/Modulos mios/FSM/Paralelismo/Paralelismo_TOP.xst" -ofn "C:/Users/Haroldo/Documents/USAC/E6/Modulos mios/FSM/Paralelismo/Paralelismo_TOP.syr" 
+xst -intstyle ise -ifn "C:/Users/Haroldo/Documents/USAC/E6/Modulos mios/FSM/Paralelismo/Paralelismo_TOP.xst" -ofn "C:/Users/Haroldo/Documents/USAC/E6/Modulos mios/FSM/Paralelismo/Paralelismo_TOP.syr" 
+xst -intstyle ise -ifn "C:/Users/Haroldo/Documents/USAC/E6/Modulos mios/FSM/Paralelismo/Paralelismo_TOP.xst" -ofn "C:/Users/Haroldo/Documents/USAC/E6/Modulos mios/FSM/Paralelismo/Paralelismo_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7z010-clg400-1 "Paralelismo_TOP.ngc" Paralelismo_TOP.ngd  
+xst -intstyle ise -ifn "C:/Users/Haroldo/Documents/USAC/E6/Modulos mios/FSM/Paralelismo/Paralelismo_TOP.xst" -ofn "C:/Users/Haroldo/Documents/USAC/E6/Modulos mios/FSM/Paralelismo/Paralelismo_TOP.syr" 
+vhdtdtfi -lib work Componente.vhd -lib work Paralelismo_TOP.vhd -prj Paralelismo -o Paralelismo_TOP.spl -module Paralelismo_TOP -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family zynq Paralelismo_TOP.spl {C:/Users/Haroldo/Documents/USAC/E6/Modulos mios/FSM/Paralelismo/Paralelismo_TOP.sym} 
+xst -intstyle ise -ifn "C:/Users/Haroldo/Documents/USAC/E6/Modulos mios/FSM/Paralelismo/Paralelismo_TOP.xst" -ofn "C:/Users/Haroldo/Documents/USAC/E6/Modulos mios/FSM/Paralelismo/Paralelismo_TOP.syr" 

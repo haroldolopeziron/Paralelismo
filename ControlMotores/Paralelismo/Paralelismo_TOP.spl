@@ -1,0 +1,10 @@
+[Inputs]
+CLK
+RST
+EN
+=PWM_IN1[7:0]=
+=PWM_IN2[7:0]=
+[Outputs]
+PWM_OUT1
+PWM_OUT2
+[BiDir]

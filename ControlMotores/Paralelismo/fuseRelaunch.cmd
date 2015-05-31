@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/Haroldo/Documents/USAC/E6/Modulos mios/FSM/Paralelismo/TOP_TB_isim_beh.exe" -prj "C:/Users/Haroldo/Documents/USAC/E6/Modulos mios/FSM/Paralelismo/TOP_TB_beh.prj" "work.TOP_TB" 

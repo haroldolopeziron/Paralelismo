@@ -1,0 +1,411 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Reading design: Componente.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Componente.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Componente"
+Output Format                      : NGC
+Target Device                      : xc7z010-1-clg400
+
+---- Source Options
+Top Module Name                    : Componente
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\Haroldo\Documents\USAC\E6\Modulos mios\FSM\Paralelismo\Componente.vhd" into library work
+Parsing entity <Componente>.
+Parsing architecture <Behavioral> of entity <componente>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <Componente> (architecture <Behavioral>) with generics from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Componente>.
+    Related source file is "C:\Users\Haroldo\Documents\USAC\E6\Modulos mios\FSM\Paralelismo\Componente.vhd".
+        width = 200
+    Found 8-bit register for signal <CONTEO>.
+    Found 8-bit adder for signal <CONTEO[7]_GND_4_o_add_0_OUT> created at line 62.
+    Found 8-bit comparator greater for signal <PWM_OUT> created at line 68
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   8 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <Componente> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 8-bit adder                                           : 1
+# Registers                                            : 1
+ 8-bit register                                        : 1
+# Comparators                                          : 1
+ 8-bit comparator greater                              : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <Componente>.
+The following registers are absorbed into counter <CONTEO>: 1 register on signal <CONTEO>.
+Unit <Componente> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 8-bit up counter                                      : 1
+# Comparators                                          : 1
+ 8-bit comparator greater                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <Componente> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Componente, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 8
+ Flip-Flops                                            : 8
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Componente.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 30
+#      GND                         : 1
+#      INV                         : 1
+#      LUT1                        : 7
+#      LUT5                        : 1
+#      LUT6                        : 3
+#      MUXCY                       : 7
+#      MUXF7                       : 1
+#      VCC                         : 1
+#      XORCY                       : 8
+# FlipFlops/Latches                : 8
+#      FDRE                        : 8
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 11
+#      IBUF                        : 10
+#      OBUF                        : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7z010clg400-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:               8  out of  35200     0%  
+ Number of Slice LUTs:                   12  out of  17600     0%  
+    Number used as Logic:                12  out of  17600     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     12
+   Number with an unused Flip Flop:       4  out of     12    33%  
+   Number with an unused LUT:             0  out of     12     0%  
+   Number of fully used LUT-FF pairs:     8  out of     12    66%  
+   Number of unique control sets:         1
+
+IO Utilization: 
+ Number of IOs:                          12
+ Number of bonded IOBs:                  12  out of    100    12%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK                                | BUFGP                  | 8     |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 1.466ns (Maximum Frequency: 682.128MHz)
+   Minimum input arrival time before clock: 0.770ns
+   Maximum output required time after clock: 3.029ns
+   Maximum combinational path delay: 2.727ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 1.466ns (frequency: 682.128MHz)
+  Total number of paths / destination ports: 36 / 8
+-------------------------------------------------------------------------
+Delay:               1.466ns (Levels of Logic = 9)
+  Source:            CONTEO_0 (FF)
+  Destination:       CONTEO_7 (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: CONTEO_0 to CONTEO_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             2   0.282   0.405  CONTEO_0 (CONTEO_0)
+     INV:I->O              1   0.067   0.000  Mcount_CONTEO_lut<0>_INV_0 (Mcount_CONTEO_lut<0>)
+     MUXCY:S->O            1   0.291   0.000  Mcount_CONTEO_cy<0> (Mcount_CONTEO_cy<0>)
+     MUXCY:CI->O           1   0.015   0.000  Mcount_CONTEO_cy<1> (Mcount_CONTEO_cy<1>)
+     MUXCY:CI->O           1   0.015   0.000  Mcount_CONTEO_cy<2> (Mcount_CONTEO_cy<2>)
+     MUXCY:CI->O           1   0.015   0.000  Mcount_CONTEO_cy<3> (Mcount_CONTEO_cy<3>)
+     MUXCY:CI->O           1   0.015   0.000  Mcount_CONTEO_cy<4> (Mcount_CONTEO_cy<4>)
+     MUXCY:CI->O           1   0.015   0.000  Mcount_CONTEO_cy<5> (Mcount_CONTEO_cy<5>)
+     MUXCY:CI->O           0   0.015   0.000  Mcount_CONTEO_cy<6> (Mcount_CONTEO_cy<6>)
+     XORCY:CI->O           1   0.320   0.000  Mcount_CONTEO_xor<7> (Result<7>)
+     FDRE:D                    0.011          CONTEO_7
+    ----------------------------------------
+    Total                      1.466ns (1.061ns logic, 0.405ns route)
+                                       (72.4% logic, 27.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 16 / 16
+-------------------------------------------------------------------------
+Offset:              0.770ns (Levels of Logic = 1)
+  Source:            RST (PAD)
+  Destination:       CONTEO_0 (FF)
+  Destination Clock: CLK rising
+
+  Data Path: RST to CONTEO_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             8   0.000   0.445  RST_IBUF (RST_IBUF)
+     FDRE:R                    0.325          CONTEO_0
+    ----------------------------------------
+    Total                      0.770ns (0.325ns logic, 0.445ns route)
+                                       (42.2% logic, 57.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 13 / 1
+-------------------------------------------------------------------------
+Offset:              3.029ns (Levels of Logic = 5)
+  Source:            CONTEO_2 (FF)
+  Destination:       PWM_OUT (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: CONTEO_2 to PWM_OUT
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             2   0.282   0.745  CONTEO_2 (CONTEO_2)
+     LUT6:I0->O            2   0.053   0.745  PWM_OUT2 (PWM_OUT1)
+     LUT6:I0->O            1   0.053   0.000  PWM_OUT1_F (N6)
+     MUXF7:I0->O           1   0.214   0.485  PWM_OUT1 (PWM_OUT2)
+     LUT5:I3->O            1   0.053   0.399  PWM_OUT21 (PWM_OUT_OBUF)
+     OBUF:I->O                 0.000          PWM_OUT_OBUF (PWM_OUT)
+    ----------------------------------------
+    Total                      3.029ns (0.655ns logic, 2.374ns route)
+                                       (21.6% logic, 78.4% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 14 / 1
+-------------------------------------------------------------------------
+Delay:               2.727ns (Levels of Logic = 6)
+  Source:            PWM_in<2> (PAD)
+  Destination:       PWM_OUT (PAD)
+
+  Data Path: PWM_in<2> to PWM_OUT
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.000   0.725  PWM_in_2_IBUF (PWM_in_2_IBUF)
+     LUT6:I1->O            2   0.053   0.745  PWM_OUT2 (PWM_OUT1)
+     LUT6:I0->O            1   0.053   0.000  PWM_OUT1_F (N6)
+     MUXF7:I0->O           1   0.214   0.485  PWM_OUT1 (PWM_OUT2)
+     LUT5:I3->O            1   0.053   0.399  PWM_OUT21 (PWM_OUT_OBUF)
+     OBUF:I->O                 0.000          PWM_OUT_OBUF (PWM_OUT)
+    ----------------------------------------
+    Total                      2.727ns (0.373ns logic, 2.354ns route)
+                                       (13.7% logic, 86.3% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |    1.466|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 11.00 secs
+Total CPU time to Xst completion: 10.23 secs
+ 
+--> 
+
+Total memory usage is 351432 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

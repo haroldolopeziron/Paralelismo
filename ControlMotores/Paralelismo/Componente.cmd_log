@@ -1,0 +1,37 @@
+xst -intstyle ise -ifn "C:/Users/Haroldo/Documents/USAC/E6/Modulos mios/FSM/Paralelismo/Componente.xst" -ofn "C:/Users/Haroldo/Documents/USAC/E6/Modulos mios/FSM/Paralelismo/Componente.syr" 
+xst -intstyle ise -ifn "C:/Users/Haroldo/Documents/USAC/E6/Modulos mios/FSM/Paralelismo/Componente.xst" -ofn "C:/Users/Haroldo/Documents/USAC/E6/Modulos mios/FSM/Paralelismo/Componente.syr" 
+xst -intstyle ise -ifn "C:/Users/Haroldo/Documents/USAC/E6/Modulos mios/FSM/Paralelismo/Componente.xst" -ofn "C:/Users/Haroldo/Documents/USAC/E6/Modulos mios/FSM/Paralelismo/Componente.syr" 
+xst -intstyle ise -ifn "C:/Users/Haroldo/Documents/USAC/E6/Modulos mios/FSM/Paralelismo/Componente.xst" -ofn "C:/Users/Haroldo/Documents/USAC/E6/Modulos mios/FSM/Paralelismo/Componente.syr" 
+xst -intstyle ise -ifn "C:/Users/Haroldo/Documents/USAC/E6/Modulos mios/FSM/Paralelismo/Componente.xst" -ofn "C:/Users/Haroldo/Documents/USAC/E6/Modulos mios/FSM/Paralelismo/Componente.syr" 
+xst -intstyle ise -ifn "C:/Users/Haroldo/Documents/USAC/E6/Modulos mios/FSM/Paralelismo/Componente.xst" -ofn "C:/Users/Haroldo/Documents/USAC/E6/Modulos mios/FSM/Paralelismo/Componente.syr" 
+xst -intstyle ise -ifn "C:/Users/Haroldo/Documents/USAC/E6/Modulos mios/FSM/Paralelismo/Componente.xst" -ofn "C:/Users/Haroldo/Documents/USAC/E6/Modulos mios/FSM/Paralelismo/Componente.syr" 
+xst -intstyle ise -ifn "C:/Users/Haroldo/Documents/USAC/E6/Modulos mios/FSM/Paralelismo/Componente.xst" -ofn "C:/Users/Haroldo/Documents/USAC/E6/Modulos mios/FSM/Paralelismo/Componente.syr" 
+xst -intstyle ise -ifn "C:/Users/Haroldo/Documents/USAC/E6/Modulos mios/FSM/Paralelismo/Componente.xst" -ofn "C:/Users/Haroldo/Documents/USAC/E6/Modulos mios/FSM/Paralelismo/Componente.syr" 
+xst -intstyle ise -ifn "C:/Users/Haroldo/Documents/USAC/E6/Modulos mios/FSM/Paralelismo/Componente.xst" -ofn "C:/Users/Haroldo/Documents/USAC/E6/Modulos mios/FSM/Paralelismo/Componente.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7z010-clg400-1 "Componente.ngc" Componente.ngd  
+map -intstyle ise -p xc7z010-clg400-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Componente_map.ncd Componente.ngd Componente.pcf 
+par -w -intstyle ise -ol high -mt off Componente_map.ncd Componente.ncd Componente.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Componente.twx Componente.ncd -o Componente.twr Componente.pcf 
+xst -intstyle ise -ifn "C:/Users/Haroldo/Documents/USAC/E6/Modulos mios/FSM/Paralelismo/Componente.xst" -ofn "C:/Users/Haroldo/Documents/USAC/E6/Modulos mios/FSM/Paralelismo/Componente.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7z010-clg400-1 "Componente.ngc" Componente.ngd  
+xst -intstyle ise -ifn "C:/Users/Haroldo/Documents/USAC/E6/Modulos mios/FSM/Paralelismo/Componente.xst" -ofn "C:/Users/Haroldo/Documents/USAC/E6/Modulos mios/FSM/Paralelismo/Componente.syr" 
+xst -intstyle ise -ifn "C:/Users/Haroldo/Documents/USAC/E6/Modulos mios/FSM/Paralelismo/Componente.xst" -ofn "C:/Users/Haroldo/Documents/USAC/E6/Modulos mios/FSM/Paralelismo/Componente.syr" 
+xst -intstyle ise -ifn "C:/Users/Haroldo/Documents/USAC/E6/Modulos mios/FSM/Paralelismo/Componente.xst" -ofn "C:/Users/Haroldo/Documents/USAC/E6/Modulos mios/FSM/Paralelismo/Componente.syr" 
+xst -intstyle ise -ifn "C:/Users/Haroldo/Documents/USAC/E6/Modulos mios/FSM/Paralelismo/Componente.xst" -ofn "C:/Users/Haroldo/Documents/USAC/E6/Modulos mios/FSM/Paralelismo/Componente.syr" 
+xst -intstyle ise -ifn "C:/Users/Haroldo/Documents/USAC/E6/Modulos mios/FSM/Paralelismo/Componente.xst" -ofn "C:/Users/Haroldo/Documents/USAC/E6/Modulos mios/FSM/Paralelismo/Componente.syr" 
+xst -intstyle ise -ifn "C:/Users/Haroldo/Documents/USAC/E6/Modulos mios/FSM/Paralelismo/Componente.xst" -ofn "C:/Users/Haroldo/Documents/USAC/E6/Modulos mios/FSM/Paralelismo/Componente.syr" 
+xst -intstyle ise -ifn "C:/Users/Haroldo/Documents/USAC/E6/Modulos mios/FSM/Paralelismo/Componente.xst" -ofn "C:/Users/Haroldo/Documents/USAC/E6/Modulos mios/FSM/Paralelismo/Componente.syr" 
+xst -intstyle ise -ifn "C:/Users/Haroldo/Documents/USAC/E6/Modulos mios/FSM/Paralelismo/Componente.xst" -ofn "C:/Users/Haroldo/Documents/USAC/E6/Modulos mios/FSM/Paralelismo/Componente.syr" 
+xst -intstyle ise -ifn "C:/Users/Haroldo/Documents/USAC/E6/Modulos mios/FSM/Paralelismo/Componente.xst" -ofn "C:/Users/Haroldo/Documents/USAC/E6/Modulos mios/FSM/Paralelismo/Componente.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7z010-clg400-1 "Componente.ngc" Componente.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7z010-clg400-1 "Componente.ngc" Componente.ngd  
+map -intstyle ise -p xc7z010-clg400-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Componente_map.ncd Componente.ngd Componente.pcf 
+xst -intstyle ise -ifn "C:/Users/Haroldo/Documents/USAC/E6/Modulos mios/FSM/Paralelismo/Componente.xst" -ofn "C:/Users/Haroldo/Documents/USAC/E6/Modulos mios/FSM/Paralelismo/Componente.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7z010-clg400-1 "Componente.ngc" Componente.ngd  
+xst -intstyle ise -ifn "C:/Users/Haroldo/Documents/USAC/E6/Modulos mios/FSM/Paralelismo/Componente.xst" -ofn "C:/Users/Haroldo/Documents/USAC/E6/Modulos mios/FSM/Paralelismo/Componente.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7z010-clg400-1 "Componente.ngc" Componente.ngd  
+map -intstyle ise -p xc7z010-clg400-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Componente_map.ncd Componente.ngd Componente.pcf 
+vhdtdtfi -prj Paralelismo -o "C:/Users/Haroldo/Documents/USAC/E6/Modulos mios/FSM/Paralelismo/Componente.vhi" -module Componente -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work Componente.vhd 
+xst -intstyle ise -ifn "C:/Users/Haroldo/Documents/USAC/E6/Modulos mios/FSM/Paralelismo/Componente.xst" -ofn "C:/Users/Haroldo/Documents/USAC/E6/Modulos mios/FSM/Paralelismo/Componente.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7z010-clg400-1 "Componente.ngc" Componente.ngd  
+map -intstyle ise -p xc7z010-clg400-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Componente_map.ncd Componente.ngd Componente.pcf 
